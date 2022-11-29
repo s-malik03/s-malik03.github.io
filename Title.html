@@ -9,36 +9,66 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Title.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Title" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="D355BC42-B21E-4D06-B142-F6A3E6C38E28" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="625,325" size="100,100">Mai is a young girl who belongs to a family of assassins. She is the daughter of the leader of the brotherhood. Traditionally, only the male members in her family get to join the brotherhood, while the female members are bound to the roles of wives and caretakers. Mai, however, aspires to become an assassin. She is often made fun of by her friends and family who dismiss her ambitions as delusional. One day, Mai gets fed up with her brother (an accomplished assassin) making fun of her and tells him she would make a better assassin than he could ever be. “Why don’t you fight me and prove it then?” her brother replies.
-
-
-(set: $determination to 70)
+<tw-storydata name="Title" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="D355BC42-B21E-4D06-B142-F6A3E6C38E28" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-passage {
+  
+  font-size: 2vh;
+  font-size: 2vvw;
+  font-size: 2vmin;
+  line-height: normal;
+ 
+  
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="625,325" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=15wa6YPotYgTCbzcETkUroSHViyGRTxU8&quot; width=640 height=480 style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai is a young girl who belongs to a family of assassins. She is the daughter of the leader of the brotherhood. Traditionally, only the male members in her family get to join the brotherhood, while the female members are bound to the roles of wives and caretakers. Mai, however, aspires to become an assassin. She is often made fun of by her friends and family who dismiss her ambitions as delusional. One day, Mai gets fed up with her brother (an accomplished assassin) making fun of her and tells him she would make a better assassin than he could ever be. “Why don’t you fight me and prove it then?” her brother replies.
+{(set: $determination to 70)
 (set: $option1 to &quot;Choose to back down&quot;)
-(set: $option2 to &quot;Fight her brother&quot;)
-
+(set: $option2 to &quot;Fight her brother&quot;)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
-
 {(if: $determination &gt;= 70)[(text-colour:grey)[~~$option1~~]]
 (else: )[(text-color: orange)[ (link-goto: $option1) ] ]}
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
-(else: )[(text-color: purple)[ (link-goto: $option2)]]}</tw-passagedata><tw-passagedata pid="2" name="Fight her brother" tags="" position="750,350" size="100,100">Mai fights her brother and loses badly. Still, she is undeterred from achieving her goal. She begins training in secret in the fields where the sheets are hung to dry. Every morning, Mai goes to hang the washed sheets, which is one of her duties as a woman in the family. The sheets provide cover for her to train without the risk of being discovered and reprimanded for such “unwomanly” aspirations. 
+(else: )[(text-color: purple)[ (link-goto: $option2)]]}</tw-passagedata><tw-passagedata pid="2" name="Fight her brother" tags="" position="750,350" size="100,100"> {&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=12sKU2LVreNaeVnT-Xpe6fTctZeazwKTT&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai fights her brother and loses badly. Still, she is undeterred from achieving her goal. 
 
-(set: $determination to $determination - 20)
+{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=19OO4EXAQj48CjSjtbT1GZSErW43UzSLa&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+
+She begins training in secret in the fields where the sheets are hung to dry. Every morning, Mai goes to hang the washed sheets, which is one of her duties as a woman in the family. The sheets provide cover for her to train without the risk of being discovered and reprimanded for such “unwomanly” aspirations. 
+
+{(set: $determination to 50)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 
-(text-color: purple) [[Keep training]]</tw-passagedata><tw-passagedata pid="3" name="Keep training" tags="" position="750,475" size="100,100">One day, her mother discovers her and much to Mai’s surprise she does not stop her. Instead, she narrates her own story of how she wanted to be an assassin but could not as the elders claimed she ought to know her place as a woman and had her married off. Mai’s mother demonstrates some of the assassin fighting techniques she learned as a kid, and provides Mai with weapons stolen from her father’s armory. 
+{(text-color: purple) [[Keep training]]}</tw-passagedata><tw-passagedata pid="3" name="Keep training" tags="" position="750,475" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1SIyhUsxUc4OT62hmmAnbuOln__cQoWb-&quot; width=640 height=480 style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+One day, her mother discovers her and much to Mai’s surprise she does not stop her. Instead, she narrates her own story of how she wanted to be an assassin but could not as the elders claimed she ought to know her place as a woman and had her married off. Mai’s mother demonstrates some of the assassin fighting techniques she learned as a kid, and provides Mai with weapons stolen from her father’s armory. 
 
-(set: $determination to $determination)
+{(set: $determination to $determination)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 
-(text-color: purple) [[Complete training]]</tw-passagedata><tw-passagedata pid="4" name="Complete training" tags="" position="750,600" size="100,100">Mai feels confident with whatever limited skills she has gained and goes to the brotherhood’s training sessions demanding to train with them. The elders laugh at her and tell her that she can “train” with them as a caretaker of the dojo. A rookie assassin cheekily blurts out how Mai would be their first female caretaker. Mai wants to fight him.
-
-(set: $option1 to &quot;Accept a role as a caretaker and try to work her way up&quot;)
-(set: $option2 to &quot;Fight the rookie&quot;)
-
+{(text-color: purple) [[Complete training]]}</tw-passagedata><tw-passagedata pid="4" name="Complete training" tags="" position="750,600" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1aiatTc7s45Mc8MbuM_TwNyjcNO48DZe2&quot; width=640 height=480 style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;&quot;&gt;}
+Mai feels confident with whatever limited skills she has gained and goes to the brotherhood’s training sessions demanding to train with them. The elders laugh at her and tell her that she can “train” with them as a caretaker of the dojo. A rookie assassin cheekily blurts out how Mai would be their first female caretaker. Mai wants to fight him.
+{(set: $option1 to &quot;Accept a role as a caretaker and try to work her way up&quot;)}
+{(set: $option2 to &quot;Fight the rookie&quot;)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 
@@ -47,7 +77,7 @@
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}</tw-passagedata><tw-passagedata pid="5" name="Accept a role as a caretaker and try to work her way up" tags="" position="625,450" size="100,100">In this new supportive role at the brotherhood Mai does the men’s laundry, cleans the matts and training equipment, and brings water. This position allows Mai to observe training from afar and go back to her personal studio where she repeats the regimen. Mai is eager to use her skills in real missions but also understands that she needs to wait until the time is right to try joining the brotherhood again.
 
-(set: $determination to $determination + 10)
+(set: $determination to 60)
 (set: $option1 to &quot;She decides to wait and work her way up&quot;)
 (set: $option2 to &quot;Mai understands that there is nothing she can do to prove to her brother and the brotherhood that she is worthy of being an assassin so she runs away&quot;)
 
@@ -58,11 +88,15 @@
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 
-</tw-passagedata><tw-passagedata pid="6" name="Fight the rookie" tags="" position="500,450" size="100,100">She fights the rookie but the men conspire and give her a faulty weapon. Although all odds are against her and the weapon breaks, she wins the fight by outsmarting the rookie with unorthodox, yet effective techniques. The men laugh at her “girly” techniques and do not accept her victory. She is not offered a position in the training program even though it was promised to her. The caretaker position is still open.
-(set: $determination to $determination - 10)
+</tw-passagedata><tw-passagedata pid="6" name="Fight the rookie" tags="" position="500,450" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1PpU76iBuz0VXmIlyJO6VmwHw1eEqC8Ry&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+She fights the rookie but the men conspire and give her a faulty weapon. Although all odds are against her and the weapon breaks, she wins the fight by outsmarting the rookie with unorthodox, yet effective techniques. The men laugh at her “girly” techniques and do not accept her victory. She is not offered a position in the training program even though it was promised to her. The caretaker position is still open.
+{(set: $determination to 40)
 (set: $option1 to &quot;Accept a role as a caretaker and try to work her way up&quot;)
-(set: $option2 to &quot;Run away&quot;)
-
+(set: $option2 to &quot;Run away&quot;)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 
@@ -70,11 +104,15 @@
 (else: )[(text-color: orange)[ (link-goto: $option1) ] ]}
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}</tw-passagedata><tw-passagedata pid="7" name="She decides to wait and work her way up" tags="" position="625,575" size="100,100">During one of the training sessions, Mai decides to shoot her shot. Her brother successfully beats 3 opponents in a sparring match and Mai yells out: “You got lucky! They almost had you!” Knowing her brother’s temper, she expected a reaction. “Just like you almost had me?” Her brother smirks at her. “It won’t be almost this time,” Mai replies. She picks up a wooden sword and slowly makes her way towards the sparring circle. They both begin to fight.
-
+{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=12sKU2LVreNaeVnT-Xpe6fTctZeazwKTT&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+{(set: $determination to 70)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
-
-(text-color: purple)[[Let the fight begin]]
+{(text-color: purple)[[Let the fight begin]]}
 
 </tw-passagedata><tw-passagedata pid="8" name="Let the fight begin" tags="" position="625,700" size="100,100">Her brother tries going easy on her but soon realizes he is facing an opponent far more skilled than him. He tries his best but is ultimately defeated with Mai’s wooden sword at his throat. Mai’s father is surprised and his eyes have a faint glimmer of pride. He tries his best to hide it and quickly thinks about how he is going to save his son from the humiliation of being beaten by a mere woman. To solve this, he declares Mai to be officially part of the brotherhood which means that at least it was not some ordinary woman who beat his son. There is some chatter among the assassins but they reluctantly accept this decision.
 
@@ -96,7 +134,7 @@
 
 </tw-passagedata><tw-passagedata pid="10" name="Mai understands that there is nothing she can do to prove to her father that she is worthy of being the leader so she runs away" tags="" position="500,750" size="100,100">(goto: &quot;Run away&quot;)</tw-passagedata><tw-passagedata pid="11" name="Run away" tags="" position="750,875" size="100,100">Mai runs away. She decides to go off on her own and do minor contracts, but she struggles to find work. No one wants to hire a girl with no references or real experiences to do their dirty work.
 
-(set: $determination to $determination - 10)
+(set: $determination to 60)
 (set: $option1 to &quot;Mai realizes this was a terrible idea and even though she believes that she can still do everything she claims she can do she understands that she can’t get anywhere in this world without a man backing her up at the very least&quot;)
 (set: $option2 to &quot;Mai isn’t given a contract she thought she was for sure going to get, but she decides she knows enough information about the target and wants to follow through with the job to earn respect from the client and prove herself capable&quot;)
 
@@ -107,12 +145,16 @@
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 
-</tw-passagedata><tw-passagedata pid="12" name="Mai isn’t given a contract she thought she was for sure going to get, but she decides she knows enough information about the target and wants to follow through with the job to earn respect from the client and prove herself capable" tags="" position="625,1000" size="100,100">Mai follows through with the attack on the target but is caught off guard by unexpected visitors. 
+</tw-passagedata><tw-passagedata pid="12" name="Mai isn’t given a contract she thought she was for sure going to get, but she decides she knows enough information about the target and wants to follow through with the job to earn respect from the client and prove herself capable" tags="" position="625,1000" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1UDfFSzEIWwXAxRV9NBAcF2nYFd3DVKea&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai follows through with the attack on the target but is caught off guard by unexpected visitors. 
 
-(set: $determination to $determination - 10)
+{(set: $determination to 50)
 (set: $option1 to &quot;Abandon mission and go home&quot;)
-(set: $option2 to &quot;Improvise and fight the visitors&quot;)
-
+(set: $option2 to &quot;Improvise and fight the visitors&quot;)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 {(if: $determination &gt;= 70)[(text-colour:grey)[~~$option1~~]]
@@ -121,7 +163,7 @@
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 </tw-passagedata><tw-passagedata pid="13" name="Improvise and fight the visitors" tags="" position="700,1150" size="100,100">Fights the visitors, but they are very surprisingly skilled in fighting. She puts up a very good fight but ultimately finds herself with a knife to her throat.
 
-(set: $determination to $determination - 10)
+(set: $determination to 40)
 (set: $option1 to &quot;Say nothing&quot;)
 (set: $option2 to &quot;Tell them to kill her&quot;)
 
@@ -133,12 +175,15 @@
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 </tw-passagedata><tw-passagedata pid="14" name="Say nothing" tags="" position="825,1150" size="100,100">(goto: &quot;kidnapped&quot;)
 
-</tw-passagedata><tw-passagedata pid="15" name="Tell them to kill her" tags="" position="575,1250" size="100,100">(goto: &quot;kidnapped&quot;)</tw-passagedata><tw-passagedata pid="16" name="kidnapped" tags="" position="825,1025" size="100,100">Mai is taken blindfolded to headquarters, where she learns she had just fought multiple japanese special ops agents and almost won. The agents decide they like her grit and wit and offer her a position in their training program.
-
-(set: $determination to 70)
+</tw-passagedata><tw-passagedata pid="15" name="Tell them to kill her" tags="" position="575,1250" size="100,100">(goto: &quot;kidnapped&quot;)</tw-passagedata><tw-passagedata pid="16" name="kidnapped" tags="" position="825,1025" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1BS1XZiLv3cN7hVxkswEO3bXz_YNqPG49&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai is taken blindfolded to headquarters, where she learns she had just fought multiple japanese special ops agents and almost won. The agents decide they like her grit and wit and offer her a position in their training program.
+{(set: $determination to 70)
 (set: $option1 to &quot;Refuse the offer&quot;)
-(set: $option2 to &quot;Accept the offer&quot;)
-
+(set: $option2 to &quot;Accept the offer&quot;)}
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
 {(if: $determination &gt;= 70)[(text-colour:grey)[~~$option1~~]]
@@ -162,9 +207,14 @@
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option3~~]]
-(else: )[(text-color: purple)[ (link-goto: $option3)]]}</tw-passagedata><tw-passagedata pid="18" name="Mai is satisfied with her role in the JSO" tags="" position="825,1275" size="100,100">Mai meets a man in the special ops program and falls in love. They settle down and start a family. Mai and her partner decide as a team that it makes the most sense for her to retire from her role as an assassin and to stop performing missions. She still gets to train young women, but she has to cut back her hours because she is essentially a single mother with no family to support her when her partner is away on missions. She loves her family and wouldn’t wish them away for the world, but she misses her career.</tw-passagedata><tw-passagedata pid="19" name="Mai feels she has gotten the most out of her experience in the JSO and decides it&#39;s time for her to go home and demand the respect she deserves from the brotherhood" tags="" position="700,1400" size="100,100">Mai submits her letter of resignation and goes home. Her family welcomes her with open arms. When she lets them know what she has been doing for the past 4 years they are startled and confused and her father tells her that women have no place in their line of business. Even though she is able to prove her assassin abilities physically she still isn’t able to convince her brotherhood and her family that she as a woman has a place as an assassin in the brotherhood. Mai realizes the only way to be in the brotherhood is to become the one in charge.
+(else: )[(text-color: purple)[ (link-goto: $option3)]]}</tw-passagedata><tw-passagedata pid="18" name="Mai is satisfied with her role in the JSO" tags="" position="825,1275" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=11asAu1qgGb_4lAC-8KJ4fnnKpLKy9KI5&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai meets a man in the special ops program and falls in love. They settle down and start a family. Mai and her partner decide as a team that it makes the most sense for her to retire from her role as an assassin and to stop performing missions. She still gets to train young women, but she has to cut back her hours because she is essentially a single mother with no family to support her when her partner is away on missions. She loves her family and wouldn’t wish them away for the world, but she misses her career.</tw-passagedata><tw-passagedata pid="19" name="Mai feels she has gotten the most out of her experience in the JSO and decides it&#39;s time for her to go home and demand the respect she deserves from the brotherhood" tags="" position="700,1400" size="100,100">Mai submits her letter of resignation and goes home. Her family welcomes her with open arms. When she lets them know what she has been doing for the past 4 years they are startled and confused and her father tells her that women have no place in their line of business. Even though she is able to prove her assassin abilities physically she still isn’t able to convince her brotherhood and her family that she as a woman has a place as an assassin in the brotherhood. Mai realizes the only way to be in the brotherhood is to become the one in charge.
 
-(set: $determination to $determination + 10)
+(set: $determination to 80)
 (set: $option1 to &quot;Accept her role in the brotherhood because she misses her family&quot;)
 (set: $option2 to &quot;Challenge her father for the position of the head of the brotherhood&quot;)
 
@@ -178,11 +228,16 @@
 </tw-passagedata><tw-passagedata pid="20" name="Accept her role in the brotherhood because she misses her family" tags="" position="575,1400" size="100,100">Mai is not happy fulfilling the traditional womanly role in the brotherhood and is put in an arranged marriage where she is a subservient wife.
 </tw-passagedata><tw-passagedata pid="21" name="Challenge her father for the position of the head of the brotherhood" tags="" position="700,1525" size="100,100">Mai defeats her father and becomes the new head of her family’s assassin brotherhood. She spares her father and he accepts her as an exceptional assassin. Mai defeats anyone that opposes her and implements girls into the brotherhood. She becomes the most respected leader in the history of the brotherhood.
 
-</tw-passagedata><tw-passagedata pid="22" name="Although she is grateful for the respect she has gained in the JSO she still feels the disparities between men and women in the program are too great for her to ignore. She wants to try to implement change" tags="" position="825,1600" size="100,100">Over the years at the JSO Mai notices things about the structure of the JSO that don’t support her feeling of wanting to be treated the same as men. She realizes that she doesn’t want to be respected as a female assassin, she wants to be respected as an assassin. She thinks that it is important for men to learn how to be cunning and for women to learn how to use their strength. She spends years slowly integrating the female and male training programs, distracting people from her gender equality motives with the idea that the program should focus on an individual&#39;s strengths not the stereotypical strengths of their assigned gender. She is able to prove quickly that training people to find and hone their strengths is incredibly beneficial/efficient. She develops a very dynamic team of skilled assassins. In breaking down the institutionalized barriers that separated men and women, Mai finds that she is no longer respected as just a female assassin and now she is respected as an assassin.
+</tw-passagedata><tw-passagedata pid="22" name="Although she is grateful for the respect she has gained in the JSO she still feels the disparities between men and women in the program are too great for her to ignore. She wants to try to implement change" tags="" position="825,1600" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1LeR-tvuTQf4ODxcSvHk-iemTyqUB3jcD&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;&quot;&gt;}
+Over the years at the JSO Mai notices things about the structure of the JSO that don’t support her feeling of wanting to be treated the same as men. She realizes that she doesn’t want to be respected as a female assassin, she wants to be respected as an assassin. She thinks that it is important for men to learn how to be cunning and for women to learn how to use their strength. She spends years slowly integrating the female and male training programs, distracting people from her gender equality motives with the idea that the program should focus on an individual&#39;s strengths not the stereotypical strengths of their assigned gender. She is able to prove quickly that training people to find and hone their strengths is incredibly beneficial/efficient. She develops a very dynamic team of skilled assassins. In breaking down the institutionalized barriers that separated men and women, Mai finds that she is no longer respected as just a female assassin and now she is respected as an assassin.
 
-(set: $determination to $determination + 10)
+{(set: $determination to $determination + 10)
 (set: $option1 to &quot;Grow old and retire to live a happy fulfilled life&quot;)
-(set: $option2 to &quot;Go home and try to implement change&quot;)
+(set: $option2 to &quot;Go home and try to implement change&quot;)}
 
 {(if: $determination &lt;= 30) [(text-color: red)[ Determination: (print: $determination)%]]
 (else:)[(text-color: green)[ Determination: (print: $determination)%]]}
@@ -191,7 +246,12 @@
 {(if: $determination &lt;= 30)[(text-colour:grey)[~~$option2~~]]
 (else: )[(text-color: purple)[ (link-goto: $option2)]]}
 
-</tw-passagedata><tw-passagedata pid="23" name="Grow old and retire to live a happy fulfilled life" tags="" position="550,1625" size="100,100">Mai continues her service in the JSO and eventually starts a family. Mai is content with her life and passes away through old age surrounded by her loved ones.</tw-passagedata><tw-passagedata pid="24" name="Go home and try to implement change" tags="" position="350,1400" size="100,100">Mai returns home and her family is shocked to see that she returned. They wonder what she has been doing all these years and she tells them everything. Her father is impressed by her work and offers a spot in the brotherhood. He says that her role will be equal to that of the men in the brotherhood but Mai is skeptical. She sees through her father&#39;s lies and decides that there is only one solution to this. She challenges her father in hand-to-hand combat. This was the biggest battle of Mai’s career and her father didn’t make it easy on her. However, Mai was able to overpower him in an instant and put him in a headlock.
+</tw-passagedata><tw-passagedata pid="23" name="Grow old and retire to live a happy fulfilled life" tags="" position="550,1625" size="100,100">{&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=11asAu1qgGb_4lAC-8KJ4fnnKpLKy9KI5&quot; style=&quot;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;&quot;&gt;}
+Mai continues her service in the JSO as an influential and groundbreaking leader that gets promoted to the head of the JSO. As the head, she continues to break down barriers and promote change. A couple years later, she meets a fellow assassin and gets married. Mai starts a family and retires back to being a trainer, so she can be a mother and still have an important role in the JSO.</tw-passagedata><tw-passagedata pid="24" name="Go home and try to implement change" tags="" position="350,1400" size="100,100">Mai returns home and her family is shocked to see that she returned. They wonder what she has been doing all these years and she tells them everything. Her father is impressed by her work and offers a spot in the brotherhood. He says that her role will be equal to that of the men in the brotherhood but Mai is skeptical. She sees through her father&#39;s lies and decides that there is only one solution to this. She challenges her father in hand-to-hand combat. This was the biggest battle of Mai’s career and her father didn’t make it easy on her. However, Mai was able to overpower him in an instant and put him in a headlock.
 
 (set: $determination to $determination + 10)
 (set: $option1 to &quot;Spare her father&quot;)
